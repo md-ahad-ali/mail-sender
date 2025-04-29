@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form Submission</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        /* Container for the email content */
+        .email-container {
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border: 1px solid #dddddd;
+        }
+
+        /* Header styling */
+        .email-header {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333333;
+            border-bottom: 2px solid #eeeeee;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        /* Body styling */
+        .email-body {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #444444;
+        }
+
+        /* Each content field */
+        .email-body p {
+            margin-bottom: 15px;
+        }
+
+        /* Footer styling */
+        .email-footer {
+            margin-top: 30px;
+            font-size: 14px;
+            color: #888888;
+            border-top: 1px solid #eeeeee;
+            padding-top: 10px;
+        }
+
+        .email-footer a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        .email-footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<div class="email-container">
+    <!-- Email Header -->
+    <div class="email-header">
+        Portfolio Contact Form
+    </div>
+
+    <!-- Email Body -->
+    <div class="email-body">
+        <p><strong>Name:</strong> {{name}}</p>
+        <p><strong>Email:</strong> {{email}}</p>
+        <p><strong>Subject:</strong> {{subject}}</p>
+        <p><strong>Message:</strong></p>
+        <p>{{message}}</p>
+    </div>
+</div>
+</body>
+</html>
